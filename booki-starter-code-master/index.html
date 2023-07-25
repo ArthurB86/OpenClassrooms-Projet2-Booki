@@ -15,70 +15,66 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="main-container">
-        <header>
-        <div class="header">
+        <header class="header">
             <img class="logo" src="images/logo/Booki@3x.png" alt="Logo Booki">
             <nav class="menu">
-                <div>
-                  <a href="#Hébergements" class="link">Hébergements</a>
-                  <a href="#Activités" class="link">Activités</a>
-                </div>
+                <ul class="menu-txt">
+                    <li><a href="#hebergements" class="link">Hébergements</a></li>
+                    <li><a href="#activite" class="link">Activités</a></li>
+                </ul>
             </nav>
-        </div>
         </header>
         <main>
-            <section class="Searchbar1">
-                <div>
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p class="subHead">En plein centre-ville ou en pleine nature</p>
-                    <form action="" method="get" class="searchBar">
-                        <div class="informationSearch"> <i class="fa-solid fa-location-dot" style="color: #000000;"></i></div>
-                         <div class="search"><input type="search" placeholder="Marseille, France"></div>
-                         <div ><button class="buttonSearch">Rechercher</button></div>
-                     </form>
-            </section>
-            <section class="filter1">
+            <section class="search-bar1">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="subhead">En plein centre-ville ou en pleine nature</p>
+                <form action="" method="get" class="search-bar">
+                    <i class="information-search fa-solid fa-location-dot" style="color: #000000;"></i>
+                    <input type="search" class="search" placeholder="Marseille, France ">
+                    <button class="button-search">Rechercher</button>
+                    <button class="searchicon fa-solid fa-magnifying-glass"></button>
+                </form>
                 <div class="filter">
-                    <div>
-                        <p class="wordOne">Filtres</p>
+                    <ul class="test">
+                        <li class="word-one">Filtres</li>
+                        <li class="button-filter"><i class="fa-solid fa-money-bill"></i> Economique</li>
+                        <li class="button-filter"><i class="fa-solid fa-child"></i> Familial</li>
+                        <li class="button-filter"><i class="fa-solid fa-heart"></i> Romantique</li>
+                        <li class="button-filter"><i class="fa-solid fa-fire"></i> Nos pépites</li>
+                    </ul>
+                    <!--<div>
+                        <p class="word-one">Filtres</p>
                     </div>
                     <div> 
-                        <button class="buttonFilter">
+                        <button class="button-filter">
                             <i class="fa-solid fa-money-bill"></i>
                             <p>Economique</p>
                         </button>
                     </div>
                     <div>
-                        <button class="buttonFilter">
+                        <button class="button-filter">
                             <i class="fa-solid fa-child"></i>
                            <p>Familial</p> 
                         </button>
                     </div>
                     <div>
-                        <button class="buttonFilter">
+                        <button class="button-filter">
                             <i class="fa-solid fa-heart"></i>
                             <p>Romantique</p>
                         </button>
                     </div>
                     <div>
-                        <button class="buttonFilter">
+                        <button class="button-filter">
                             <i class="fa-solid fa-fire"></i>
                             <p> Nos pépites </p>
                         </button>
-                    </div>
+                    </div>-->
                 </div>
+                <p class="infos"><i class="iBorder fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
-                <div class="infos" >
-                    <div class="iBorder"><i class="fa-solid fa-info" ></i> </div>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-            
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
-                    <div>
-                        <h2 class="section-title">Hébergements à Marseille</h2>
-                    </div>
+            <section class="hebergements-and-populaires">
+                <div class="hebergements" id="hebergements">
+                    <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <article class="box">
                             <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant deux lits simple">
@@ -183,9 +179,9 @@
                             </div>
                         </article>
                     </div>
-                    <div class="hebergement-txt"><a href="" class="link">Afficher plus</a></div>
-                </section>
-                <section class="populaires">
+                    <a href="" class="hebergement-txt link">Afficher plus</a>
+                </div>
+                <aside class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -243,10 +239,10 @@
                             </div>
                         </article>
                     </div>
-                </section>
-            </div>
+                </aside>
+            </section>
             
-            <section class="activite">
+            <section class="activite" id="activite">
                 <div class="populaires-title">
                     <h2 class="section-title">Activités à Marseille</h2>
                 </div>
@@ -256,7 +252,6 @@
                         <div class="card-content">
                             <h3>Vieux-Port</h3>
                         </div>
-
                     </article>
                     <article class="card">
                         <img src="./images/activites/paul-hermann.jpg" alt="">
@@ -279,15 +274,33 @@
                         </div>
 
                     </article>
-                
                 </div>
-</section>
-            </div>
-
-            
+            </section>
         </main>
-        <footer></footer>
-    </div>
-</body>
+        <footer class="contenu-footer">
+            <div class="bloc-footer">
+                <ul>
+                    <li class="gras">À propos</li>
+                    <li><a href="#"> Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="bloc-footer">
+                <ul>
+                    <li class="gras">Nos Hébergements</li>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer un hôtel</a></li>
+                </ul>
+            </div>
+            <div class="bloc-footer">
+                <ul>
+                    <li class="gras">Assitance</li>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 
 </html>
