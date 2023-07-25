@@ -123,10 +123,6 @@ font-weight: bold;
 
 }
 
-    
-
-
-
 /****** FILTERS ******/
 .word-one{
     font-size: 18px;
@@ -195,7 +191,6 @@ font-weight: bold;
 
 a{
     text-decoration: none;
-    text-decoration-color: none;
     color: black;
 }
 
@@ -536,4 +531,9 @@ font-weight: bold;
     .button-search{
         display: none;
     }
-      }
+    .menu-txt {
+        border-bottom: 2px solid grey;
+    }
+    
+    
+       }
