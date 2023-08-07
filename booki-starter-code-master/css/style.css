@@ -412,7 +412,12 @@ font-weight: bold;
         flex-direction: column;
     }
     .logo{
-        width: 20%;
+        width: 10%;
+      margin-top: 30px;
+      
+    }
+    .header{
+        padding: 0;
     }
    .activite-card img{
     height: 200px
@@ -457,13 +462,17 @@ font-weight: bold;
    .filter ul{
     flex-wrap: wrap;
    }
-   
+
    .word-one{
     width: 100%;
    }
    .bloc-footer {
     width: 33%;
     margin: 0 25px;
+}
+.footer{
+    padding: 0;
+    
 }
   } 
 
@@ -479,6 +488,7 @@ body{
         align-items: center;
         gap: 10px;
         width: 100%; 
+        padding: 0;
         }
     
    .filter{
@@ -486,9 +496,16 @@ body{
     flex-wrap: wrap;
     width: 100%;
    }
+
+   .logo{
+    width: 20%;
+   }
    .button-filter{
-    width: 38%;
+    width: 33%;
    font-size: 16px;
+   display: flex;
+   justify-content: flex-start;
+   padding: 4px 19px 4px 19px;
    }
    .word-one{
     width: 100%;
@@ -568,11 +585,16 @@ body{
     .menu-txt li:hover .link:after {
         display: none;
     }
-    footer{
+    .footer{
         width: 100%; 
+        padding: 0;
     }
     .bloc-footer{
         width: 100%;
         margin: 0;
     }
+    .search-bar1{
+        padding: 0 20px 0 20px;
+    }
+    
      }
