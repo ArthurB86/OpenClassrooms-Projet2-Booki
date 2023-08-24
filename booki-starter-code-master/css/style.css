@@ -54,9 +54,7 @@ body {
 }
 
 .neutral-star {
-    color: var(--main-bg-color);
-    
-    
+    color: var(--main-bg-color);   
 }
 
 .logo {
